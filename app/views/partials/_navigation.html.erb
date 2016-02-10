@@ -1,0 +1,25 @@
+<header>
+	<nav class="be-red white large-padding">
+		<ul class="no-list row center-xs around-xs middle-xs">
+			<li class="col-md">
+	    		<h1 class="no-margin" id="logo"><%= link_to "~=::}ArticleBlog{::=~", root_path %></h1>
+	    	</li>
+			<li class="col-md"><%= link_to "Articles", articles_path %></li>
+			<% if user_signed_in? %>
+				<li class="col-md">
+					<%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+				</li>
+				<li class="col-md"> 
+					<%= link_to "Create Article", new_article_path %>
+				</li>
+			<% else %>
+				<li class="col-md">
+					<%= link_to "Log In", new_user_session_path %>
+				</li>
+				<li class="col-md">
+					<%= link_to "Create Acount", new_user_registration_path %>
+				</li>
+			<% end %>
+		</ul>
+	</nav>
+</header>

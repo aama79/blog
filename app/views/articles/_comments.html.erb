@@ -1,0 +1,22 @@
+<div class="gray">
+	<div class="row">
+		<div class="col-xs-6">
+			Leave a comment
+		</div>
+		<div class="col-xs-6">
+		<%= @article.comments.count %> - Comment(s)
+		</div>
+	</div>
+		<% if user_signed_in? %>
+		<div id="comments-box">
+			<%= render "comments/form" %>
+			<div class="top-space">
+			<%= render @article.comments %>
+		</div>
+		</div>
+		<% else %>
+		<div class="top-space">
+			<%= render @article.comments %>
+		</div>
+		<% end %>
+</div>

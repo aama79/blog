@@ -1,0 +1,11 @@
+<% @articles.each do |article| %>
+	<h1><%= link_to article.title, article %></h1>
+	<% if user_signed_in? %>
+		<div> <%= article.body %> -==- <%= link_to "Edit", edit_article_path(article), class:"delete-link"  %> -==- <%= link_to "Delete", article, method: :delete, :data => {:confirm => "Are you sure"}, class:"delete-link" %> </div>
+		<% else %>
+		<div><%= article.body %></div>
+		<% end %>
+<% end %>
+<div class="top-space text-center">
+	<%= will_paginate @articles, class:"page-link"  %>
+</div>

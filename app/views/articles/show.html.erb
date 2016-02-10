@@ -1,0 +1,37 @@
+<article class="bottom-space">
+	<div class="row center-xs">
+		<div class="col-xs-12 ligth-border col-md-7">
+			<p>
+				<%= image_tag @article.cover.url(:thumb) %>			
+			</p>
+				
+				
+			<h1 class="be-big blue"><%= @article.title %></h1>
+			<p class="text-right be-small">
+				<%= link_to "Back", articles_path, class:"underline"%> - 
+				<span class="red"><%= @article.visits_count %> Visit(s)</span> -
+				<% unless @article.user.nil? %>
+					Writted by: <%= @article.user.email %>
+				<% end %>
+			</p>
+			<div class="text-justify">
+						<% if user_signed_in? %>
+						<%= @article.body %>
+						<div class="top-space">
+						<%= link_to "Edit Article", edit_article_path(@article),  class:"delete-link" %> -== -
+						<%= link_to "Delete Article", @article_id, method: :delete, :data => {:confirm => "Are you sure"}, class:"delete-link" %>
+						</div>
+					<% else %>
+					<%= @article.body %>
+					<% end %>
+					<div class="top-space">
+						Aritcle created <%= time_ago_in_words(@article.created_at) %> ago
+					</div>
+			</div>	
+			<div class="top-space" id="comments-box">
+				<%= render "articles/comments" %>
+			</div>	
+
+		</div>
+	</div>
+</article>

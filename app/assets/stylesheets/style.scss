@@ -1,0 +1,185 @@
+html, body
+{
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+a,a:visited
+{
+	color: inherit !important;
+	text-decoration: none;
+}
+.absolute
+{
+	position: absolute;
+}
+.article-height
+{
+	height: 120px;
+}
+.background-cover
+{
+	background-position: center;
+	background-size: cover;
+}
+
+.be-big
+{
+	font-size: 2em;
+}
+.be-red
+{
+	background-color: #C0C0C0;
+}
+.be-small
+{
+	font-size: 12px;
+}
+.blue
+{
+	color: #4682B4 !important;
+}
+.btn_guardar
+{
+	background-color: #C0C0C0;
+	border: 2px solid gray;
+	cursor: pointer;
+	color: #335577;
+	font-size: 1em;
+	text-transform: uppercase;
+	outline: none;
+	padding: 8px, 6px;
+	margin-top: 10px;
+}
+.bottom-space
+{
+	margin-bottom: 2em;
+}
+.body-article
+{
+	margin: 0 auto;
+	width: 70%
+}
+.box_article
+{
+	margin: 0 auto;
+	width: 75%;
+}
+.delete-link
+{
+	background-color: #eceff1;
+	border: 2px solid #b39ddb;
+	border-radius: 0.25em;
+	cursor: pointer;
+	color: #335577 !important;
+	font-size: 1em;
+	outline: none;
+	padding: 8px, 6px;
+	margin-top: 10px;
+
+}
+
+.field
+{
+	margin-top: 1em;
+}
+.form-control
+{
+	border: none;
+	border-bottom: 1px solid;
+	display: block;
+	font-size: 1.2em;
+	outline: none;
+	padding: 10px 0px;
+	width: 70%;
+}
+.grey
+{
+	color: #808080;
+}
+.large-padding
+{
+	padding: 6px 4px;
+}
+#logo
+{
+	font-size: 1em;
+}
+.no-list
+{
+	list-style: none;
+}
+.no-margin
+{
+	margin: 0px;
+}
+
+.size_box
+{
+	height: 200px;
+}
+
+.message_alert
+{
+	background: red;
+	border: 1px solid gray;
+	font-size: 1em;
+	height: 20px;
+	margin: auto;
+	text-align: center;
+	width: 450px;
+}
+.page-link
+{
+	background-color: #eceff1;
+	border: 2px solid #b39ddb;
+	border-radius: 0.25em;
+	color: #335577 !important;
+	cursor: pointer;
+	font-size: 1em;
+	height: 30px;
+	margin: 50px auto;
+	outline: none;
+	width: 200px;
+}
+.relative
+{
+	position: relative;
+}
+.text-center
+{
+	text-align: center;
+}
+.text-justify
+{
+	text-align: justify;
+}
+.text-left
+{
+	text-align: left;
+}
+.text-right
+{
+	text-align: right;
+}
+.top-space
+{
+	margin-top: 1em;
+}
+.underline
+{
+	text-decoration: underline;
+}
+.wel_message
+{
+	border: 2px solid #b39ddb;
+	border-radius: 2em;
+	text-align: center;
+	margin: 20px auto;
+	width: 800px;
+	color: #335577;
+
+}
+.white
+{
+	color: #e8eaf6;
+}
